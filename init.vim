@@ -46,6 +46,8 @@ if (has("autocmd"))
 endif
 colorscheme onedark
 
+set ff=unix
+
 set autoindent
 set smartindent
 
