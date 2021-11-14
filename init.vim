@@ -28,20 +28,20 @@ let g:onedark_color_overrides = {
 \ "background": {"gui": "#111414", "cterm": "235", "cterm16": "0" },
 \}
 if (has("autocmd"))
-	augroup colorextend
-		autocmd!
-		let s:white = { "gui": "ABB2BF" }
-		let s:blue = { "gui": "#61AFEF" }
-		let s:yellow = { "gui": "#E5C07B" }
-		let s:green = { "gui": "#98C379" }
-		autocmd ColorScheme * call onedark#extend_highlight("Operator", { "fg": s:white })
-		autocmd ColorScheme * call onedark#extend_highlight("Keyword", { "fg": s:blue })
-		autocmd ColorScheme * call onedark#extend_highlight("Function", { "fg": s:yellow })
-		autocmd ColorScheme * call onedark#extend_highlight("StorageClass", { "fg": s:blue })
-		autocmd ColorScheme * call onedark#extend_highlight("Number", { "fg": s:green })
-		autocmd ColorScheme * call onedark#extend_highlight("Boolean", { "fg": s:green })
-		autocmd ColorScheme * call onedark#extend_highlight("Float", { "fg": s:green })
-		autocmd ColorScheme * call onedark#extend_highlight("SpecialChar", { "fg": s:green })
+    augroup colorextend
+        autocmd!
+        let s:white = { "gui": "ABB2BF" }
+        let s:blue = { "gui": "#61AFEF" }
+        let s:yellow = { "gui": "#E5C07B" }
+        let s:green = { "gui": "#98C379" }
+        autocmd ColorScheme * call onedark#extend_highlight("Operator", { "fg": s:white })
+        autocmd ColorScheme * call onedark#extend_highlight("Keyword", { "fg": s:blue })
+        autocmd ColorScheme * call onedark#extend_highlight("Function", { "fg": s:yellow })
+        autocmd ColorScheme * call onedark#extend_highlight("StorageClass", { "fg": s:blue })
+        autocmd ColorScheme * call onedark#extend_highlight("Number", { "fg": s:green })
+        autocmd ColorScheme * call onedark#extend_highlight("Boolean", { "fg": s:green })
+        autocmd ColorScheme * call onedark#extend_highlight("Float", { "fg": s:green })
+        autocmd ColorScheme * call onedark#extend_highlight("SpecialChar", { "fg": s:green })
     augroup END
 endif
 colorscheme onedark
@@ -85,8 +85,8 @@ nnoremap <leader>q :bd<CR>
 
 nnoremap <leader>b :CtrlPBuffer<CR>
 let g:ctrlp_custom_ignore = {
-			\ 'dir': '\v[\/](\.git|target)',
-	\ }
+        \ 'dir': '\v[\/](\.git|target)',
+    \ }
 let g:ctrlp_max_files=0
 let g:ctrlp_max_depth=10
 
